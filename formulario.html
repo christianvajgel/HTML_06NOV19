@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kombi Café - Página Inicial</title>
+        <link rel="stylesheet" href="resources/estilos.css">
+    </head>
+    <body>
+    <header>
+        <img src="images/logo_cafe.jpg" height="360" width="360" alt="Logo café" title="Logo"/>
+        <h1 class="noheader">Café</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Meio</a></li>
+            <li class="exibe"><a href="#">Sono</a>
+                <ul class="submenu">
+                    <li class="itemSubmenu">RJ</li>
+                    <li class="itemSubmenu">SP</li>
+                </ul>
+            </li>
+            <li><a href="#">Fome</a></li>
+            <li><a href="#">Fim</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Escreva seu nome" required="required"/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escreva seu email" required="required"/>
+            </div>
+            <div>
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Escreva sua empresa" value="Transpetro" disabled required="required"/>
+            </div>
+            <div>
+                <label for="cartaoCred">Cartão de Crédito:</label>
+                <input type="number" id="cartaoCred" name="cartaoCred" maxlength="16" placeholder="Escreva seu cartão" required="required"/>
+            </div>
+            <div>
+                <label for="comentarios">Comentários:</label>
+                <textarea rows="5" cols="100" id="comentarios" name="comentarios" maxlength="16" placeholder="Escreva seu comentário" required="required"></textarea>
+            </div>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </section>
+    </body>
+</html>
